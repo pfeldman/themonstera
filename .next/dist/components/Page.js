@@ -40,9 +40,6 @@ var _Clock2 = _interopRequireDefault(_Clock);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/pablo/Documents/monstera/components/Page.js';
-
-
 var Page = function (_React$Component) {
   (0, _inherits3.default)(Page, _React$Component);
 
@@ -61,35 +58,7 @@ var Page = function (_React$Component) {
           title = _props.title,
           linkTo = _props.linkTo;
 
-      return _react2.default.createElement('div', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      }, _react2.default.createElement('h1', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      }, title), _react2.default.createElement(_Clock2.default, { lastUpdate: lastUpdate, light: light, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }), _react2.default.createElement('nav', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }, _react2.default.createElement(_link2.default, { href: linkTo, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, _react2.default.createElement('a', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, 'Navigate'))));
+      return _react2.default.createElement('div', null, _react2.default.createElement('h1', null, title), _react2.default.createElement(_Clock2.default, { lastUpdate: lastUpdate, light: light }), _react2.default.createElement('nav', null, _react2.default.createElement(_link2.default, { href: linkTo }, _react2.default.createElement('a', null, 'Navigate'))));
     }
   }]);
 
@@ -102,12 +71,5 @@ function mapStateToProps(state) {
     light: state.tick.light
   };
 }
-
-Page.propTypes = {
-  lastUpdate: _react.PropTypes.number,
-  light: _react.PropTypes.bool,
-  linkTo: _react.PropTypes.string,
-  title: _react.PropTypes.string
-};
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Page);

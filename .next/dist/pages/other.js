@@ -64,7 +64,7 @@ var Counter = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_Page2.default, { title: 'PRINCIPAL Page', linkTo: '/other' });
+      return _react2.default.createElement(_Page2.default, { title: 'Other Page ' + (this.props.isServer ? 'from server' : 'from client'), linkTo: '/' });
     }
   }], [{
     key: 'getInitialProps',
@@ -72,6 +72,7 @@ var Counter = function (_React$Component) {
       var store = _ref.store,
           isServer = _ref.isServer;
 
+      console.log(isServer);
       store.dispatch({ type: 'TICK', light: !isServer, ts: Date.now() });
       return { isServer: isServer };
     }

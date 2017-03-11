@@ -6,6 +6,7 @@ import Page from '../components/Page'
 
 class Counter extends React.Component {
   static getInitialProps ({ store, isServer }) {
+    console.log(isServer)
     store.dispatch({ type: 'TICK', light: !isServer, ts: Date.now() })
     return { isServer }
   }
@@ -20,7 +21,7 @@ class Counter extends React.Component {
 
   render () {
     return (
-      <Page title={'Other Page ' + this.props.isServer ? 'from server' : 'from client'} linkTo='/' />
+      <Page title={'Other Page ' + (this.props.isServer ? 'from server' : 'from client')} linkTo='/' />
     )
   }
 }

@@ -15,7 +15,8 @@
     "redux-thunk": "^2.1.0"
   },
   "scripts": {
-    "start": "next -p $PORT",
+    "heroku-prebuild": "next build",
+    "start": "next start -p $PORT",
     "heroku-postbuild": "heroku-nextjs-build"
   },
   "cacheDirectories": [

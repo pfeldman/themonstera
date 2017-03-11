@@ -20,7 +20,7 @@ class Counter extends React.Component {
 
   render () {
     return (
-      <Page title='Index Page' linkTo='/other' />
+      <Page title='PRINCIPAL Page' linkTo='/other' />
     )
   }
 }

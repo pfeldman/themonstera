@@ -67,7 +67,7 @@ var Counter = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_Page2.default, { title: 'Index Page', linkTo: '/other', __source: {
+      return _react2.default.createElement(_Page2.default, { title: 'PRINCIPAL Page', linkTo: '/other', __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         }
